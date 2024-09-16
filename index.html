@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2x2 Iframes</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        .iframe-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            height: 100vh; /* Full height of viewport */
+        }
+
+        .iframe-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none; /* Remove borders between iframes */
+        }
+    </style>
+</head>
+<body>
+    <div class="iframe-container">
+        <iframe src="https://example.com"></iframe>
+        <iframe src="https://example.com"></iframe>
+        <iframe src="https://example.com"></iframe>
+        <iframe src="https://example.com"></iframe>
+    </div>
+</body>
+</html>
