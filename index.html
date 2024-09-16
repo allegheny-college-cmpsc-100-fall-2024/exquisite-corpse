@@ -40,5 +40,19 @@ c<!DOCTYPE html>
         <! -- bottom right -->
         <iframe src="https://trinket.io/embed/glowscript/b33eed8dcd16?outputOnly=true&start=result" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
     </div>
+<script>
+    // remove trinket branding from iframes
+    const iframes = document.querySelectorAll('iframe');
+    iframes.forEach(iframe => {
+        iframe.onload = () => {
+            //remove class glowscript-canvas-wrapper from div
+            const glowscriptCanvasWrapper = iframe.contentDocument.querySelector('.glowscript-canvas-wrapper');
+            glowscriptCanvasWrapper.classList.remove('glowscript-canvas-wrapper');
+        
+
+        }
+    });
+
+</script>
 </body>
 </html>
