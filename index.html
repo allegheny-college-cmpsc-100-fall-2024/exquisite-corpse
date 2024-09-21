@@ -59,9 +59,12 @@
 	console.log(link)
 	iframe.src = link;
         iframe.onload = () => {
-            //remove class glowscript-canvas-wrapper from div
-            const glowscriptCanvasWrapper = iframe.contentDocument.querySelector('.glowscript-canvas-wrapper');
-            glowscriptCanvasWrapper.classList.remove('glowscript-canvas-wrapper');
+            //hide nav in iframe loaded content
+	const nav = iframe.contentDocument.querySelector('.nav');
+	nav.style.display = 'none';
+		
+        //const glowscriptCanvasWrapper = iframe.contentDocument.querySelector('.glowscript-canvas-wrapper');
+          //  glowscriptCanvasWrapper.classList.remove('glowscript-canvas-wrapper');
         
 
         }
