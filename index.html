@@ -28,22 +28,31 @@ c<!DOCTYPE html>
             
 	}
     </style>
+    <script>
+	// store trinket link identifiers in variables
+	var topleft = "https://trinket.io/glowscript/0a711791bb53";
+	var topright = "https://trinket.io/glowscript/05142cbbddef";
+	var bottomleft = "https://trinket.io/glowscript/81b58419fde9";
+	var bottomright = "https://trinket.io/glowscript/b33eed8dcd16";
+    </script>>
+
 </head>
 <body>
     <div class="iframe-container">
         <! -- top left -->
-        <iframe src="https://trinket.io/embed/glowscript/0a711791bb53?outputOnly=true&start=result" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+        <iframe id = "topleft" src="" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
         <! -- top right -->
-        <iframe src="https://trinket.io/embed/glowscript/05142cbbddef?outputOnly=true&start=result" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>     
+        <iframe id = "topright" src="" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>     
         <! -- bottom left --> 
-        <iframe src="https://trinket.io/embed/glowscript/81b58419fde9?outputOnly=true&start=result" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+        <iframe id = "bottomleft" src="" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
         <! -- bottom right -->
-        <iframe src="https://trinket.io/embed/glowscript/b33eed8dcd16?outputOnly=true&start=result" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+        <iframe id = "bottomright" src="" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
     </div>
 <script>
     // remove trinket branding from iframes
     const iframes = document.querySelectorAll('iframe');
     iframes.forEach(iframe => {
+	iframe.src = eval(iframe.id);
         iframe.onload = () => {
             //remove class glowscript-canvas-wrapper from div
             const glowscriptCanvasWrapper = iframe.contentDocument.querySelector('.glowscript-canvas-wrapper');
