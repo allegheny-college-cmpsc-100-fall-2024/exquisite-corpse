@@ -60,7 +60,9 @@
 	console.log(link)
 	iframe.src = link;
         iframe.onload = () => {
-            //hide nav in iframe loaded content
+            //get iframe content
+		let content = iframe.contentDocument;
+		console.log(content);
 	const nav = iframe.contentDocument.querySelector('.nav');
 	nav.style.display = 'none';
 		

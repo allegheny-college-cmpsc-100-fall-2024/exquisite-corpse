@@ -10,7 +10,7 @@ To add your trinket to the Canvas, follow these steps:
 
 1. Copy your trinket link by clicking on the "Share" button, choosing link and copying the link.
 
-2. Exit [`index.html`](index.html). In lines 33-36, you'll see variables containing the starter code trinket links. Replace the value of the varaible corresponding to your quadrant with your trinket link.  
+2. Exit [`index.html`](index.html). In lines 34-37, you'll see variables containing the starter code trinket links. Replace the value of the varaible corresponding to your quadrant with your trinket link.  
 
 3. Commit your changes. 
 
