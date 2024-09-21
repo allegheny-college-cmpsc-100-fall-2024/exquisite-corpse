@@ -34,7 +34,7 @@ c<!DOCTYPE html>
 	var topright = "https://trinket.io/glowscript/05142cbbddef";
 	var bottomleft = "https://trinket.io/glowscript/81b58419fde9";
 	var bottomright = "https://trinket.io/glowscript/b33eed8dcd16";
-    </script>>
+    </script>
 
 </head>
 <body>
@@ -56,6 +56,7 @@ c<!DOCTYPE html>
 	# format from https://trinket.io/glowscript/05142cbbddef to https://trinket.io/embed/glowscript/05142cbbddef?outputOnly=true&start=result
 	link = link.replace("https://trinket.io/glowscript/", "https://trinket.io/embed/glowscript/");
 	link = link + "?outputOnly=true&start=result";
+	console.log(link);
 	iframe.src = link;
         iframe.onload = () => {
             //remove class glowscript-canvas-wrapper from div
