@@ -15,6 +15,8 @@ To add your trinket to the Canvas, follow these steps:
     - Click [this link](settings/pages) to access the GitHub Pages settings.
     - Under "Source", select "main" branch.
     - Wait a few minutes for the site to build, then refresh the page. 
-5. Find the link to your GitHub pages site [here](settings/pages) (it should look something like the screenshot below). This link will take you to your group's Canvas.  
+5. Find the link to your GitHub pages site [here](settings/pages) (it should look something like the screenshot below). This link will take you to your group's Canvas.
+   <img width="761" alt="image" src="https://github.com/user-attachments/assets/1368e091-4c37-4c9d-baa1-ad83ac1bbaf8">
+ 
 
 
