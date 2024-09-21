@@ -59,7 +59,7 @@
 	link = link + "?outputOnly=true&start=result";
 	console.log(link)
 	iframe.src = link;
-	    iframe.addEventListener('load', function () {
+	    iframe.addEventListener('load', function ({
             //get iframe content
 		let content = iframe.contentDocument;
 		console.log(content);
