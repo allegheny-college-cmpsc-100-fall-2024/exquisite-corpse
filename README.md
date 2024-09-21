@@ -2,7 +2,10 @@
 ## Group Repository
 
 This repository allows you to combine your group's trinkets into a single Canvas. 
-You will present this Canvas to the class during the two presentations. 
+You will present this Canvas to the class during the two presentations.
+
+> [!NOTE]
+> To make the animation continuous, allow trinkets to load on their own (do not click "Run" on the Canvas).
 
 ### Instructions
 
